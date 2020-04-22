@@ -27,7 +27,8 @@ class MainActivity : BaseActivity() {
 
     override fun setUpEvents() {
 
-        storeListView.setOnItemLongClickListener { parent, view, position, id ->
+        storeListView.setOnItemClickListener { parent, view, position, id ->
+
             val clickedStoreData = pizzaStores.get(position)
 
             val myIntent = Intent(mContext, StoreInFoActivity::class.java)
@@ -35,6 +36,7 @@ class MainActivity : BaseActivity() {
             startActivity(myIntent)
 
         }
+
 
     }
 
