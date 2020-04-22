@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:paddingTop="8dp">
     <LinearLayout
+        android:id="@+id/storeList"
         android:paddingTop="4dp"
         android:paddingBottom="4dp"
         android:paddingLeft="15dp"

@@ -19,15 +19,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="가게 이름"
-        android:textSize="30dp"/>
+        android:textSize="30sp"/>
     <TextView
         android:layout_marginTop="15dp"
         android:layout_marginBottom="50dp"
         android:id="@+id/pizzaStoreTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="<가게이름>"
-        android:textSize="25dp"
+        android:text="상호명"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="#000000"/>
 
@@ -50,12 +50,13 @@
                     android:id="@+id/pizzaStoreNumTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="<가게번호>"
+                    android:text="가게번호"
                     android:textSize="25dp"
                     android:textStyle="bold"
                     android:textColor="#000000"/>
             </LinearLayout>
             <Button
+                android:id="@+id/callBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="#FF5722"
