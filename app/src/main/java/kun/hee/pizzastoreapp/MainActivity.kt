@@ -12,6 +12,11 @@ class MainActivity : BaseActivity() {
     private lateinit var mPizzaAdapter:StoreAdapter
     val pizzaStores = ArrayList<Store>()
 
+    val mpa:StoreAdapter by lazy {
+        StoreAdapter(mContext, R.layout.store_list, pizzaStores)
+    }
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,7 +36,7 @@ class MainActivity : BaseActivity() {
         addPizzaStores()
         mPizzaAdapter = StoreAdapter(mContext, R.layout.store_list, pizzaStores)
 
-        storeListView.adapter = mPizzaAdapter
+        storeListView.adapter = mpa
 
     }
 
