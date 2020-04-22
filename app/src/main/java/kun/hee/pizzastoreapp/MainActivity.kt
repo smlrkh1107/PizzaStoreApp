@@ -8,8 +8,8 @@ import kun.hee.pizzastoreapp.adapters.StoreAdapter
 import kun.hee.pizzastoreapp.datas.Store
 
 class MainActivity : BaseActivity() {
-
-    var mPizzaAdapter:StoreAdapter? = null
+            //변수에 값넣는거 초기화시켜줌.
+    private lateinit var mPizzaAdapter:StoreAdapter
     val pizzaStores = ArrayList<Store>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
