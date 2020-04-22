@@ -35,7 +35,7 @@ class StoreAdapter(context:Context, resId:Int, list: ArrayList<Store>)
 
         storeNameTxt.text = storeDate.name
 
-        Glide.with(mContext).load(storeDate.logoUrl).into()
+        Glide.with(mContext).load(storeDate.logoUrl).into(logoImg)
 
 
 

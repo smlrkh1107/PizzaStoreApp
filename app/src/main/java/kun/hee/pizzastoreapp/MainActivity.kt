@@ -1,5 +1,6 @@
 package kun.hee.pizzastoreapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -26,7 +27,12 @@ class MainActivity : BaseActivity() {
 
     override fun setUpEvents() {
 
-        callBtn.setOnClickListener {
+        storeListView.setOnItemLongClickListener { parent, view, position, id ->
+            val clickedStoreData = pizzaStores.get(position)
+
+            val myIntent = Intent(mContext, StoreInFoActivity::class.java)
+            myIntent.putExtra("storeDate", clickedStoreData) //class를 바로 넣으면 에러에러
+            startActivity(myIntent)
 
         }
 
