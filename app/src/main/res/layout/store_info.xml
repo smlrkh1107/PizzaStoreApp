@@ -7,6 +7,7 @@
     android:padding="20dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/storeLogoImg"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="30dp"
         android:layout_width="180dp"
@@ -23,7 +24,7 @@
     <TextView
         android:layout_marginTop="15dp"
         android:layout_marginBottom="50dp"
-        android:id="@+id/pizzaStoreTxt"
+        android:id="@+id/storeNameTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="상호명"
@@ -47,7 +48,7 @@
                     android:textSize="30dp"/>
                 <TextView
                     android:layout_marginTop="15dp"
-                    android:id="@+id/pizzaStoreNumTxt"
+                    android:id="@+id/storeNumTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="가게번호"
